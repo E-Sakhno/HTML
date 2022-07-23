@@ -1,0 +1,26 @@
+hr {
+	border: none;
+	background-color: DarkGreen;
+	color: DarkGreen;
+	height: 5px;
+}
+
+
+
+.forma {
+	font-family: "Times New Roman";
+	font-size: 18px;
+	color: Navy;
+	vertical-align: center;
+}
+
+.form{
+	background: LightGreen;
+	text-align: center;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+.div {
+	text-align: center;	
+}

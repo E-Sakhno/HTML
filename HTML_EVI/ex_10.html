@@ -1,0 +1,79 @@
+<body>
+  <style>
+    form {
+      text-align: center;
+      background-color: #D1E3F7;
+      color: blue;
+      padding: 5px;
+      margin: 5px;
+      width: 20%;
+      font-size: 1.5rem;
+      border: 1px double black;
+    }
+
+    label {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding-left: 25px;
+      margin-right: 15px;
+      font-size: 1.3rem;
+    }
+
+    input[type=checkbox] {
+      display: none;
+    }
+
+    label:before {
+      content: "";
+      display: inline-block;
+
+      width: 16px;
+      height: 16px;
+
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: rgb(212, 212, 212);
+      box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+      border-radius: 8px;
+
+    }
+
+    .checkbox label:before {
+      border-radius: 3px;
+
+    }
+
+    input[type=checkbox]:checked+label:before {
+      content: "\2713";
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+      font-size: 15px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 15px;
+    }
+  </style>
+
+  <form>
+    <div class="checkbox">
+
+      В этом году я собираюсь приобрести:
+      <br>
+      <input id="check1" type="checkbox" name="check" value="tablet">
+      <label for="check1">Планшет</label>
+      <br>
+      <input id="check2" type="checkbox" name="check" value="notebook">
+      <label for="check2">Ноутбук</label>
+      <br>
+      <input id="check3" type="checkbox" name="check" value="printer">
+      <label for="check3">Принтер</label>
+      <br>
+      <input id="check4" type="checkbox" name="check" value="scanner">
+      <label for="check4">Сканер</label>
+    </div>
+
+  </form>
+
+</body>

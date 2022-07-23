@@ -1,0 +1,76 @@
+<body>
+  <style>
+    form {
+      background-color: #D1E3F7;
+      padding: 5px;
+      margin: 5px;
+      width: 50%;
+      size: 50px;
+      border: 1px double black;
+    }
+
+    h3 {
+      text-align: center;
+      font-style: bold;
+      color: darkblue;
+
+    }
+
+    input[type=text] {
+      border: 2px solid green;
+      border-radius: 4px;
+    }
+
+    input[type=text]:focus {
+      background-color: lightblue;
+    }
+
+
+    textarea {
+
+      background-color: #FEFFBF;
+    }
+
+    input[type=submit] {
+      padding: 5px 15px;
+      background: white;
+      border: 2px solid;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type=reset] {
+      padding: 5px 15px;
+      background: white;
+      border: 2px solid;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+
+
+
+  <form action="MAILTO:info@mysite.ru" method="post" enctype="text/plain">
+    <h3>Подписка на новостную рассылку Учебного центра</h3>
+    Имя:<br>
+    <input type="text" name="name" value="ваше имя" size="20">
+    <br>
+    Mail:<br>
+    <input type="text" name="mail" value="ваш е-mail" size="20">
+    <br>
+    Я хочу получать:
+    <br>
+    <input type="checkbox" name="news"> Новости о жизни Учебного центра
+    <br>
+    <input type="checkbox" name="courses"> Информацию о новых курсах
+    <br>
+    <input type="checkbox" name="books"> Информацию о новых предложениях
+    <br>
+    Комментарий:<br>
+    <textarea rows="5" cols="30">
+  </textarea>
+    <hr>
+    <input type="submit" value="Послать">
+    <input type="reset" value="Сброс">
+  </form>
+</body>
